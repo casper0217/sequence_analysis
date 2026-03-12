@@ -75,14 +75,15 @@
 이 프로젝트는 대용량 AI 모델과 외부 분석 도구(Ghidra)를 사용하므로, 환경에 따른 추가 설정이 필요합니다.
 
 ### 1. 사전 요구 사항 (Prerequisites)
-- **Ghidra**: 11.x 버전 이상이 설치되어 있어야 합니다. [다운로드](https://ghidra-sre.org/)
-- **Docker & Docker Compose**: PostgreSQL 및 Redis 구동을 위해 필요합니다.
-- **Python 3.12+** 및 **Node.js**
+* **Ghidra (11.x 이상):** 시스템에 Ghidra가 설치되어 있어야 합니다. [다운로드](https://ghidra-sre.org/)
+* **Docker & Docker Compose:** 데이터베이스(Postgres)와 메시지 브로커(Redis) 실행을 위해 필요합니다.
+* **Python 3.12+ / Node.js 18+**
+* **.NET SDK 8.0:** .NET 분석기 빌드를 위해 필요합니다.
 
 ### 2. AI 모델 준비 (Models)
 본 프로젝트의 AI 모델 파일은 대용량인 관계로 Git 저장소에서 제외되었습니다. 아래 경로에 모델 파일을 배치해야 정상 동작합니다.
-- `models/bigbird_from_scratch_best/`: 학습된 BigBird 모델 파일들 (`config.json`, `model.safetensors` 등)
-- `models/pro_best_detector_lightgbm.joblib`: 정적 분석용 LightGBM 모델 파일
+* `models/bigbird_from_scratch_best/`: 학습된 BigBird 모델 파일들 (`config.json`, `model.safetensors` 등)
+* `models/pro_best_detector_lightgbm.joblib`: 정적 분석용 LightGBM 모델 파일
 
 ### 3. 환경 변수 설정 (.env)
 루트 디렉토리에 `.env` 파일을 생성하고 본인의 환경에 맞게 입력합니다. (내부 코드에서 이 경로를 참조하여 분석을 수행합니다.)
