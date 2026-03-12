@@ -17,10 +17,10 @@
 | ![Main UI](./assets/1.main_ui.png) | ![Scanning](./assets/2.scanning.png) |
 | 사용자의 PE 파일을 안전하게 수신합니다. | 분석 단계별 로그를 터미널 스타일로 제공합니다. |
 
-| 3. 하이브리드 AI 판별 결과 및 DFS 시퀀스 시각화 |
+| 3. 하이브리드 AI 판별 결과 및 DFS 시퀀스 시각화 | 4. 최종 변환된 API_Sequence |
 | :---: | :---: |
 | ![Result](./assets/3.result.png) | ![API_Seqeunce](./assets/4.sequence.png)|
-| 두 모델의 교차 검증 결과와 추출된 실행 흐름 시퀀스를 상세히 출력합니다. | 최종 변환된 API_Sequence |
+| 두 모델의 교차 검증 결과와 추출된 실행 흐름 시퀀스를 상세히 출력합니다. | 최종 feature로 다계층 구조로 이뤄짐 |
 
 
 
