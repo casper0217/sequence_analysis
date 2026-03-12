@@ -1,0 +1,40 @@
+# 1. 환경 및 가상환경 (제외)
+.env
+.venv/
+venv/
+ghidra_env/
+ghidra_java/
+ghidra_project/
+node_modules/
+.next/
+
+# 2. 분석 데이터 및 결과물 (제외)
+json/
+json_dfs/
+temp/
+logs/
+uploads/
+bak/
+fidb/
+Date_backup/
+
+# 3. 덩치 큰 파일 및 DB (제외)
+*.db
+*.sqlite3
+*.7z
+*.log
+models/
+DotNetAnalyzer/bin/
+DotNetAnalyzer/obj/
+
+# 4. 기타 문서 및 임시파일 (제외)
+*.csv
+failed_files.txt
+failure_report.csv
+file_structure.txt
+service_code.txt
+.DS_Store
+__pycache__/
+*.pyc
+.Rhistory
+.history/
