@@ -19,7 +19,7 @@
 
 | 3. 하이브리드 AI 판별 결과 및 DFS 시퀀스 시각화 | 4. 최종 변환된 API_Sequence |
 | :---: | :---: |
-| ![Result](./assets/3.result.png) | ![API_Seqeunce](./assets/4.sequence.png)|
+| ![Result](./assets/3.result.png) | ![API_Seqeunce](./assets/4.convert_sequence.png)|
 | 두 모델의 교차 검증 결과와 추출된 실행 흐름 시퀀스를 상세히 출력합니다. | 최종 feature로 다계층 구조로 이뤄짐 |
 
 
