@@ -14,8 +14,17 @@ if [ -f "${BASE_DIR}/.env" ]; then
     export $(grep -v '^#' "${BASE_DIR}/.env" | xargs)
 fi
 
+if [ -z "$GHIDRA_INSTALL_PATH" ]; then
+    echo "---------------------------------------------------------------"
+    echo "에러: GHIDRA_INSTALL_PATH 가 설정되지 않았습니다."
+    echo ".env 파일에 기드라 설치 경로를 입력해주세요."
+    echo "예: GHIDRA_INSTALL_PATH=/opt/ghidra_11.x"
+    echo "---------------------------------------------------------------"
+    exit 1
+fi
+
 # 환경변수에 값이 없으면 기본 경로 사용
-GHIDRA_PATH="${GHIDRA_INSTALL_PATH:-/home/jy/ghidra_11.4.1_PUBLIC}"
+GHIDRA_PATH="$GHIDRA_INSTALL_PATH"
 GHIDRA_HEADLESS_PATH="${GHIDRA_PATH}/support/analyzeHeadless"
 
 OUTPUT_DIR="${BASE_DIR}/json"
