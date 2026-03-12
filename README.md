@@ -1,7 +1,7 @@
 # 하이브리드 AI 기반 악성코드 판별 시스템
 
 > **API 호출 시퀀스 예측 및 PE 구조 분석을 결합한 통합 탐지 파이프라인**
-> [상세 발표 자료 보기 (PDF)](./docs/malware_classification.pdf)
+[상세 발표 자료 보기 (PDF)](./docs/malware_classification.pdf)
 
 본 프로젝트는 정적 분석의 한계와 동적 분석의 제약을 동시에 해결하기 위해 개발되었습니다. Ghidra P-Code 분석을 통한 행위 예측 모델과 PE 구조 분석 모델을 결합한 하이브리드 접근법을 고안해냈습니다.
 
