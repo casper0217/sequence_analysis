@@ -17,13 +17,15 @@
 | ![Main UI](./assets/1.main_ui.png) | ![Scanning](./assets/2.scanning.png) |
 | 사용자의 PE 파일을 안전하게 수신합니다. | 분석 단계별 로그를 터미널 스타일로 제공합니다. |
 
-| 3. 하이브리드 AI 판별 결과 및 DFS 시퀀스 시각화 | 4. 최종 변환된 API_Sequence |
-| :---: | :---: |
-| ![Result](./assets/3.result.png) | ![API_Seqeunce](./assets/4.convert_sequence.png)|
-| 두 모델의 교차 검증 결과와 추출된 실행 흐름 시퀀스를 상세히 출력합니다. | 최종 feature로 다계층 구조로 이뤄짐 |
+| 3. 하이브리드 AI 판별 결과 및 DFS 시퀀스 시각화 | 
+| :---: |
+| ![Result](./assets/3.result.png) | 
+| 두 모델의 교차 검증 결과와 추출된 실행 흐름 시퀀스를 상세히 출력합니다. | 
 
-
-
+| 4. 최종 변환된 API_Sequence |
+| :---: |
+| ![API_Seqeunce](./assets/4.convert_sequence.png)|
+| 단순히 파일에 포함된 API 목록을 나열하는 방식은 코드의 의도를 파악하기 어렵습니다. 제가 구축한 파이프라인은 함수의 시작과 끝을 추적하여, 어떤 함수 내에서 어떤 API들이 특정 목적을 위해 뭉쳐서 호출되는지를 시퀀스화했습니다.  |
 
 
 ## 시스템 아키텍처
