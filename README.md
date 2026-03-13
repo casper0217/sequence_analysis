@@ -45,13 +45,14 @@
 
 ### 1. API 시퀀스 분석 모델 
 
-- **Input:** DFS로 정렬된 계층적 API 호출 시퀀스
-- **Model:** 최대 4096 토큰을 처리하는 **BigBird** 채택 (일반 BERT의 512 토큰 한계 극복)
+- **Input:** exe, dll 파일
+- **Features:** file_type(native, .net), api_sueqence
+- **Preprocessing** dfs를 이용한 정렬, baseline(32bit, 64bit)
+- **FIDB, SIM** 함수명 복원을 위해 Trellix FIDB, SIM 사용 
 
 ### 2. PE 구조 분석 모델 
 
 - **Features:** PE 헤더 정보, 섹션 엔트로피, 디지털 서명 유효성 등 32개 특징 추출
-- **Performance:** **F1 Score 0.99** 달성
 
 ## 문제 해결 및 기술적 성장 
 - **Stripped 바이너리의 함수명 복원 문제:**
